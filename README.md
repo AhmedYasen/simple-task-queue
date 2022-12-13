@@ -16,5 +16,6 @@ Just run `docker compose up --build -d`
  - list specific task: `GET http://localhost:3000/tasks/[ID]` (DON'T FORGET ID)
  
 # Sequence Diagram
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/18401282/207250980-2c22d0dd-8e19-490c-ab52-c7033af97026.png)
 
  
