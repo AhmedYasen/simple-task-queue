@@ -3,6 +3,7 @@ version: '3.8'
 services:
   producer:
     build: ./ticket-producer
+    container_name: producerc
     networks:
       - taskqueue
     ports:
@@ -12,6 +13,7 @@ services:
       - rabbitmqc
   consumer:
     build: ./ticket-consumer
+    container_name: consumerc
     networks:
       - taskqueue
     restart: always
@@ -19,6 +21,7 @@ services:
       - rabbitmqc
   rabbitmqc: 
     image: rabbitmq:alpine
+    container_name: rabbitmqc
     networks:
       - taskqueue
 

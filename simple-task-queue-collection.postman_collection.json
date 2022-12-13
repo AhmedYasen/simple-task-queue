@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "2c7d0346-2f57-4a05-858c-165c29170cc8",
+		"name": "simple-task-queue-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12579509"
+	},
+	"item": [
+		{
+			"name": "List all tasks",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Enqueue a task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"taskType\": \"SendEmail\",\n  \"from\": \"sender@example.com\",\n  \"to\": \"receiver@example.com\",\n  \"body\": \"Hello1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List specific task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
