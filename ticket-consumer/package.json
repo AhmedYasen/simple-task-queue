@@ -1,0 +1,14 @@
+{
+  "name": "ticket-system",
+  "version": "1.0.0",
+  "description": "in-house ticketing system",
+  "main": "bin/cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Yasen",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
